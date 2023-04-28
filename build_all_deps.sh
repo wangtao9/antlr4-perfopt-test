@@ -18,6 +18,6 @@ mkdir build && mkdir run && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release -DWITH_DEMO=0
 make -j8
 DESTDIR=../run make install
-cd $TOP_LEVEL_DIR
+cd ../run/usr/local/ && ln -s lib lib64
 
 

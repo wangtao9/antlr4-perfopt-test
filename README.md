@@ -1,6 +1,6 @@
 # antlr4-perfopt-test
 
-The detail see PR#4237 https://github.com/antlr/antlr4/pull/4237 
+More detail see PR#4237 https://github.com/antlr/antlr4/pull/4237 
 
 ## build antlr4 & generate C++ parser && build Cpp-runtime
 ```
@@ -36,7 +36,7 @@ make -j8
 ```
 
 ## expected optimization effect
-The trend is similar to the figure below, while the specific numbers may be different.
+The trend should be something like the figure below, while the specific numbers may be different.
 ![image](https://user-images.githubusercontent.com/29702096/235072383-25b6be8f-660b-49e8-a180-984211db55d6.png)
 
 
