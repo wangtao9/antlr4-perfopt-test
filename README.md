@@ -35,3 +35,8 @@ make -j8
 ./output/concurrent_perf_test 16
 ```
 
+## expected optimization effect
+The trend is similar to the figure below, while the specific numbers may be different.
+![image](https://user-images.githubusercontent.com/29702096/235072383-25b6be8f-660b-49e8-a180-984211db55d6.png)
+
+
