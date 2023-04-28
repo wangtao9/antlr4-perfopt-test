@@ -33,5 +33,6 @@ add_executable(concurrent_perf_test
 			   src/generated/CypherVisitor.cpp
 			  )
 
-target_link_libraries(concurrent_perf_test ${ANTLR4_CPP_RUNTIME}/lib/libantlr4-runtime.a pthread)
+target_link_libraries(concurrent_perf_test ${ANTLR4_CPP_RUNTIME}/lib64/libantlr4-runtime.a pthread)
+#target_link_libraries(concurrent_perf_test ${ANTLR4_CPP_RUNTIME}/lib/libantlr4-runtime.a pthread)
 

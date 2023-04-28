@@ -2,7 +2,6 @@
 #include <iostream>
 #include <thread>
 #include <chrono>
-#include <unistd.h>
 #include "antlr4-runtime.h"
 #include "generated/CypherLexer.h"
 #include "generated/CypherParser.h"
