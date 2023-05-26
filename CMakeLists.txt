@@ -22,6 +22,8 @@ else (ENABLE_PR4237_OPT)
 	message("PR#4237 optimization is disabled.")
 endif (ENABLE_PR4237_OPT)
 
+# enable address sanitizer
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=address")
 
 set(ANTLR4_CPP_RUNTIME ${PROJECT_SOURCE_DIR}/antlr4/runtime/Cpp/run/usr/local)
 include_directories(${ANTLR4_CPP_RUNTIME}/include/antlr4-runtime)

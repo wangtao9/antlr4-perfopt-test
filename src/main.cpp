@@ -10,7 +10,7 @@
 using namespace antlr4;
 using namespace parser;
 
-const static int QUERY_COUNT = 10000;
+const static int QUERY_COUNT = 1;
 
 const static std::string query_0 = "CALL foo()";
 const static std::string query_1 = "RETURN 1";
@@ -21,7 +21,7 @@ const static std::string query_2 =
 void proc_pure_parse(int &arg) {
   auto t0 = std::chrono::high_resolution_clock::now();
   for (int i = 0; i < QUERY_COUNT; i++) {
-      ANTLRInputStream input(query_2);
+      ANTLRInputStream input(query_0);
       CypherLexer lexer(&input);
       CommonTokenStream tokens(&lexer);
       CypherParser parser(&tokens);

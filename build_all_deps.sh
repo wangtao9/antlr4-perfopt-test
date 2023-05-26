@@ -15,7 +15,7 @@ java -jar ${ANTLR4_JAR} -Dlanguage=Cpp -visitor -o src/generated -package parser
 # see https://github.com/antlr/antlr4/tree/master/runtime/Cpp
 cd antlr4/runtime/Cpp
 mkdir build && mkdir run && cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release -DWITH_DEMO=0
+cmake .. -DCMAKE_BUILD_TYPE=Debug -DWITH_DEMO=0
 make -j8
 DESTDIR=../run make install
 cd ../run/usr/local/ && ln -s lib lib64

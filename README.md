@@ -39,4 +39,10 @@ make -j8
 The trend should be something like the figure below, while the specific numbers may be different.
 ![image](https://user-images.githubusercontent.com/29702096/235072383-25b6be8f-660b-49e8-a180-984211db55d6.png)
 
+## address sanitizer check
+```
+mkdir build.san && cd build.san
+cmake .. -DCMAKE_BUILD_TYPE=Debug -DENABLE_PR4237_OPT=1
+make -j8
+```
 
